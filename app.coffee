@@ -13,7 +13,7 @@ firestore.settings
 # Import categories to this collection ID
 CATEGORY_COLLECTION_ID = 'categories'
 
-parseCategory = (category, level, parents = {}) ->
+parseCategory = (category, level = 1, parents = {}) ->
   subcategories = _.map category.categories, (subcategory) ->
     subParents = _.clone parents
     subParents['level' + level] = firestore.doc CATEGORY_COLLECTION_ID + '/' + category.id
@@ -40,4 +40,4 @@ request
   (error, response, body) ->
     if (body.meta.code == 200)
       _.each body.response.categories, (category) ->
-        parseCategory category, 1
+        parseCategory category
