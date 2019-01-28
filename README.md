@@ -2,7 +2,7 @@
 This application will import Foursquare categories into a collection on Cloud Firestore, enabling mobile apps developed with Firebase to use Foursquare categories.
 
 ## Getting Started
-Deploy this repo to your PaaS of choice, then specify the following environmental variables:
+Use `npm start` to initiate the import, or use your PaaS of choice.  Ensure that you specify the following environmental variables:
 
 `FIREBASE_SERVICE_ACCOUNT_KEY_JSON` - path to your Firebase service account key JSON
 
