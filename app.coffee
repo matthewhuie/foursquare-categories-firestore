@@ -10,7 +10,7 @@ firestore = admin.firestore()
 firestore.settings
   timestampsInSnapshots: true
 
-// Import categories to this collection ID
+# Import categories to this collection ID
 CATEGORY_COLLECTION_ID = 'categories'
 
 parseCategory = (category, level, parents = {}) ->
