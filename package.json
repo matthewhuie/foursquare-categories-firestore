@@ -1,6 +1,6 @@
 {
   "name": "foursquare-categories-firestore",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Import Foursquare categories into Cloud Firestore",
   "main": "app.coffee",
   "scripts": {
@@ -8,6 +8,18 @@
   },
   "author": "Matthew Huie <matthew@matthewhuie.com>",
   "license": "ISC",
+  "keywords": [
+    "foursquare",
+    "firebase",
+    "firestore",
+    "location",
+    "api",
+    "cloud"
+  ],
+  "files": [
+    "app.coffee"
+  ],
+  "repository": "github:matthewhuie/foursquare-categories-firestore",
   "dependencies": {
     "coffeescript": "^2.3.2",
     "firebase-admin": "^6.5.1",
